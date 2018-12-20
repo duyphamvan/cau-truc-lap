@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+    <script>
+    a = 1;
+    n = 1;
+    	//Vong lap in ra man hinh 20 so nguyen to
+        do  {
+            a++;
+            if (snt(a)) {
+                document.write(a + " la so nguyen to" + "<br>");
+             n++;
+            }
+        }while(n <= 20);
+
+        //Ham kiem tra dieu kien la mot so nguyen to
+        function snt(a) {
+        for(i = 1; i <= a/2;i++){
+            if(a % i == 0 && i != 1){
+                return false;
+            }
+        }
+        //Cau lenh return de ket thuc vong lap
+        return true;
+    }
+    
+    </script>
+</body>
+</html>
